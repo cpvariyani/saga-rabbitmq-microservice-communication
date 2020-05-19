@@ -1,0 +1,41 @@
+Step 1:
+
+Create rabbitmq project
+
+Create rabbitmq-bus project - bus&constants
+add nuget packages
+ <ItemGroup>
+    <PackageReference Include="MassTransit" Version="6.2.5" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="6.2.5" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.2.5" />
+  </ItemGroup>
+
+Create rabbitmq-message project - Iordermessage
+-------------------------------------------------------------------------------------------
+
+Step 2:
+Create local nuget package for both project
+-------------------------------------------------------------------------------------------
+
+Step 3:
+create order-ms
+
+<ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="6.2.5" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.2.5" />
+</ItemGroup>
+
+add local nuget packages
+
+create view model
+create controller
+add startup entires
+---------------------------------------------------------------------------------------------
+create card-ms
+
+add nuget package
+add local nuget package
+add consumer
+startup entries
+----------------------------------------------------------------------------------------------
+test using postman
